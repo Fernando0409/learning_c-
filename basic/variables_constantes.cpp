@@ -16,6 +16,9 @@ int main(){
         modificador + tipo de dato + nombre de variable;
                             or
         modificador + tipo de dato + nombre de variable = valor de la variable;
+
+        El modificador puede ser omitido, no es necesario a menos de que se considere
+        necesario
     */
 
 
@@ -37,10 +40,27 @@ int main(){
     short int pagesBook = 512;
     float speedCar = 255.30;
     long double bigNum2 = 2000000000000; // Dos billones, México
+    bool sheLovesYou = false;
     
     cout << "The value of pagesBook is: " << pagesBook << endl;
     cout << "The value of speedCar is: " << speedCar << endl;
     cout << "The value of bigNum is: " << bigNum2 << endl;
+    cout << "Does she love? " << sheLovesYou << endl;
+    
+    /*************************** Constantes *******************************/
+
+    /*
+        Sintaxis de las constantes -> que su valor no puede modificarse
+        const + tipo de dato + nombre de la constante = valor de la constante
+    */
+
+    const float PI = 3.14159265359;
+    const int SPEED_LIGHT = 299792458;
+    const double AVOGADRO_NUMBER = 6.02214076; // En realidad es 6.02214076 x 10^23   
+
+    cout << "Value of PI: " << PI << endl;
+    cout << "The speed light is: " << SPEED_LIGHT << endl;
+    cout << "The Avogadro's number is: " << AVOGADRO_NUMBER << endl;
 
     return 0;
 }
